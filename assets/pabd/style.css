@@ -1,0 +1,35 @@
+/* .corpo div{
+    height: 100vmax;
+} */
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --azul: #244164;
+    --azul-escuro: #16283f;
+    --cinza-claro: #f3f3f3;
+    --cinza: #e9e9e9;
+    --verde: #adff2f; 
+    --verde-escuro: #8ace25; 
+}
+
+.corpo__grid {
+    width: 100%;
+    height: calc(100vh - 59px);
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.corpo__grid__col__esq {
+    max-width: 400px;
+}
+
+.some_do_cadastro {
+    background-color: var(--azul-escuro);
+    color: #fff;
+}

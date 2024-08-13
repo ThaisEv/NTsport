@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --azul: #244164;
+    --azul-escuro: #16283f;
+    --cinza-claro: #f3f3f3;
+    --cinza: #e9e9e9;
+    --verde: #adff2f; 
+    --verde-escuro: #8ace25; 
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Anuncio inicio*/
+
+.anuncio {
+    display: flex;
+    background-color: var(--azul);
+    justify-content: center;
+}
+
+.anuncio__grupo {
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: var(--azul);
+}
+
+.anuncio__textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+
+.anuncio__textos__trend {
+    width: 70%;
+    font-weight: 600;
+    padding-left: 10px;
+    color: white;
+    border-left: 2px solid white;
+}
+
+.anuncio__textos__titulo {
+    font-size: 90px;
+    color: var(--verde);
+    letter-spacing: 10px;
+}
+
+.anuncio__textos__preco {
+    display: flex;
+    gap: 6px;
+    align-items: end;
+}
+
+.anuncio__textos__preco__menor {
+    font-weight: 600;
+    color: white;
+    font-size: 10px;
+    text-align: right;
+    padding-bottom: 3px;
+}
+
+.anuncio__textos__preco__maior {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.anuncio__textos__botao {
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--verde);
+    color:var(--verde);
+    font-weight: 500;
+}
+
+.anuncio__textos__botao:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.anuncio__imagem {
+    height: 450px;
+}
+
+/*anuncio fim*/
+
+/*Informações início*/
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.informacoes__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--verde);
+    color: var(--azul-escuro);
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.informacoes__icon {
+    font-size: 50px;
+}
+
+/*Informações fim*/
+
+
+/*Planos inicio*/
+
+.planos {
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+
+}
+
+.planos__titulo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--azul);
+    padding-bottom: 10px;
+}
+
+.planos__linha {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    gap: 60px;
+}
+
+.planos__card {
+    background-color: var(--cinza-claro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #63636360;
+}
+
+.planos__card:hover {
+    background-color: var(--cinza);
+}
+.planos__card:hover > .planos__card__informacoes > .planos__card__botao > .planos__card__botao__carrinho {
+    background-color: var(--cinza);
+}
+.planos__card:hover > .planos__card__informacoes > .planos__card__botao > .planos__card__botao__carrinho:hover {
+    background-color: var(--verde);
+    color: var(--cinza);
+}
+
+
+.planos__card__informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.planos__card__titulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--azul);
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.planos__card__texto__preco {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.planos__card__botao {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.planos__card__botao__comprar {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--azul);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.planos__card__botao__comprar:hover {
+    cursor: pointer;
+    background-color: var(--azul-escuro);
+    color: var(--cinza-claro);
+    
+}
+
+.planos__card__botao__carrinho {
+    border: 2px solid var(--azul-escuro);
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--azul-escuro);
+    font-weight: 500;
+}
+
+.planos__card__botao__carrinho:hover {
+    background-color: var(--verde);
+    border-color: #adff2f;
+    cursor: pointer;
+}
+
+.planos__card__botao__carrinho:hover > .cart {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.planos__card__imagem {
+    height: 350px;
+    border-radius: 10px;
+}
+
+.cart {
+    font-size: 18px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/*Planos fim*/
+
+/*Sobre empresa início*/
+
+.sobre_empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-bottom: 80px;
+    gap: 60px;
+    max-width: 1200px;
+}
+
+.sobre_empresa__imagem {
+    height: 300px;
+    border-radius: 10px;
+}
+
+.sobre_empresa__texto {
+    color: var(--azul);
+}
+
+.sobre_empresa__texto__titulo {
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.sobre_empresa__texto__sobre {
+    color: var(--azul-escuro);
+    text-align: justify;
+}
+
+/*Sobre empresa fim*/
+

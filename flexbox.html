@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/flexbox.css">
+    <title>Flex Box</title>
+</head>
+<body>
+    <h1 class="titulo_pagina">Flex box</h1>
+    <div class="corpo">
+        
+        <div class="flex_container">
+            <h3 class="flex_container__titulo">Propriedades para o elemento "pai"</h3>
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Display</h2>
+                <p class="flex_container__card__texto">Define o contêiner flexível</p>
+                <p class="flex_container__card__texto">CSS: </p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.container {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">display: </p> <p class="texto_roxo">flex; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Flex-direction</h2>
+                <p class="flex_container__card__texto">Define o eixo principal </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.row {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-direction: </p> <p class="texto_roxo">row; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.row-reverse {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-direction: </p> <p class="texto_roxo">row-reverse; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.column {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-direction: </p> <p class="texto_roxo">column; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.column-reverse {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-direction: </p> <p class="texto_roxo">column-reverse; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Row</h5>
+                        <div class="row">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+                        <h5 class="resultado__subtitulo">Row-reverse</h5>
+                        <div class="row-reverse">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+                    </div>
+
+                    <div class="resultado_direita">
+                        <div class="resultado_direita__bloco">
+                            <h5 class="resultado__subtitulo">Column</h5>
+                            <div class="column">
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+                        
+                        <div class="resultado_direita__bloco">
+                            <h5 class="resultado__subtitulo">Row-reverse</h5>
+                            <div class="column-reverse">
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Flex-wrap</h2>
+                <p class="flex_container__card__texto">Permite a quebra de linha </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.nowrap {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-wrap: </p> 
+                        <p class="texto_roxo">nowrap; </p>
+                        <p class="texto_amarelo">/*(Padrão)*/</p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.wrap {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-wrap: </p> <p class="texto_roxo">wrap; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.wrap-reverse {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-wrap: </p> <p class="texto_roxo">wrap-reverse; </p> <p class="texto_cinza"></p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Nowrap</h5>
+                        <ul class="nowrap">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item">2</li>
+                            <li class="flex__item">3</li>
+                            <li class="flex__item">4</li>
+                            <li class="flex__item">5</li>
+                            <li class="flex__item">6</li>
+                        </ul>
+                        <h5 class="resultado__subtitulo">Wrap</h5>
+                        <ul class="wrap">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item">2</li>
+                            <li class="flex__item">3</li>
+                            <li class="flex__item">4</li>
+                            <li class="flex__item">5</li>
+                            <li class="flex__item">6</li>
+                        </ul>
+
+                        <h5 class="resultado__subtitulo">Wrap-reverse</h5>
+                        <ul class="wrap-reverse">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item">2</li>
+                            <li class="flex__item">3</li>
+                            <li class="flex__item">4</li>
+                            <li class="flex__item">5</li>
+                            <li class="flex__item">6</li>
+                        </ul>
+                    </div>
+                        
+                </div>
+            </div>
+            
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Flex-flow</h2>
+                <p class="flex_container__card__texto">Atalho para as propriedade flex-direction e flex-wrap juntas</p>
+                <p class="flex_container__card__texto">CSS: </p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.container {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-flow: </p> <p class="texto_roxo">column wrap; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Justify-content</h2>
+                <p class="flex_container__card__texto"> Define alinhamento ao longo do eixo principal </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-start {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">flex-start; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-end {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">flex-end; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.center {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">center; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.space-between {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">space-between; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.space-around {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">space-around; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.space-evenly {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">justify-content: </p> 
+                        <p class="texto_roxo">space-evelyn; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Flex-star</h5>
+                        <div class="flex-start">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Flex-end</h5>
+                        <div class="flex-end">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Center</h5>
+                        <div class="center">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Space-between</h5>
+                        <div class="space-between">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Space-around</h5>
+                        <div class="space-around">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Space-evelyn</h5>
+                        <div class="space-evelyn">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Align-items</h2>
+                <p class="flex_container__card__texto"> Alinhamento dos items flexíveis </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-start {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-items: </p> 
+                        <p class="texto_roxo">flex-start; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-end {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-items: </p> 
+                        <p class="texto_roxo">flex-end; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.center {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-items: </p> 
+                        <p class="texto_roxo">center; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.stretch {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-items: </p> 
+                        <p class="texto_roxo">stretch; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Flex-star</h5>
+                        <div class="flex-start__align-items">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Flex-end</h5>
+                        <div class="flex-end__align-items">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Center</h5>
+                        <div class="center__align-items">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Stretch</h5>
+                        <div class="stretch">
+                            <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                            <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Align-content</h2>
+                <p class="flex_container__card__texto"> Alinha linhas de um contêiner, semelhante a justify-content </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-start {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">flex-start; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex-end {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">flex-end; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.center {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">center; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div> 
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.stretch {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">stretch; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.space-between {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">space-between; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.space-around {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-content: </p> 
+                        <p class="texto_roxo">space-around; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Flex-star</h5>
+                        <div class="flex-start__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Flex-end</h5>
+                        <div class="flex-end__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Center</h5>
+                        <div class="center__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Stretch</h5>
+                        <div class="stretch__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Space-between</h5>
+                        <div class="space-between__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+
+                        <h5 class="resultado__subtitulo">Space-around</h5>
+                        <div class="space-around__align-content">
+                            <div>
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="flex_container__card_pai">
+                <h2 class="flex_container__card__titulo">Gap</h2>
+                <p class="flex_container__card__texto"> Define espaço entre os filhos </p>
+                <p class="flex_container__card__texto">CSS: </p>
+
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.gap_10px {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">gap: </p> 
+                        <p class="texto_roxo">10px; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.gap_30px {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">gap: </p> 
+                        <p class="texto_roxo">30px; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+
+                    <br>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.gap_50px {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">gap: </p> 
+                        <p class="texto_roxo">50px; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div> 
+
+                </div>
+
+                <p class="flex_container__card__texto">Resultado: </p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo">Gap 10px</h5>
+                        <div class="gap_10px">
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <br>
+                        <h5 class="resultado__subtitulo">Gap 30px</h5>
+                        <div class="gap_30px">
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+
+                        <br>
+                        <h5 class="resultado__subtitulo">Gap 10px</h5>
+                        <div class="gap_50px">
+                                <i class="material-symbols-outlined quadrado_rosa">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_verde">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_amarelo">crop_square</i>
+                                <i class="material-symbols-outlined quadrado_azul">crop_square</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex_container">
+            <h3 class="flex_container__titulo">Propriedades para o elemento "filho"</h3>
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Order</h2>
+                <p class="flex_container__card__texto">Define a ordem em que parece no contêiner</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.item {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">order: </p> <p class="texto_roxo">5; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Flex-grow</h2>
+                <p class="flex_container__card__texto">Define a capacidade do item crescer</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.item_2 {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-grow: </p> <p class="texto_roxo">5; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+                    
+                <p class="flex_container__card__texto">Resultado:</p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo direita">Flex-grow</h5>
+                        <ul class="flex-grow_grupo">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item flex-grow">2</li>
+                            <li class="flex__item">3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Flex-shrink</h2>
+                <p class="flex_container__card__texto">Define a capacidade do item escolher</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.item_2 {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-shrink: </p> <p class="texto_roxo"> 4; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado:</p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo direita">Flex-shrink</h5>
+                        <ul class="flex-shrink_grupo">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item flex-shrink">2</li>
+                            <li class="flex__item">3</li>
+                            <li class="flex__item">4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Flex-basis</h2>
+                <p class="flex_container__card__texto">Define o tamanho padrão de um elemento</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.item {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex-basis: </p> <p class="texto_roxo">| auto; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Flex</h2>
+                <p class="flex_container__card__texto">Abreviação de flex-grow, flex-shrink e flex-basis combinados</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.flex {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">flex: </p> <p class="texto_amarelo"> <'flex-grow'> <'flex-shrink'> <'flex-basis'>; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_container__card_filho">
+                <h2 class="flex_container__card__titulo">Align-self</h2>
+                <p class="flex_container__card__texto">Alinhamento por item individualmente</p>
+                <p class="flex_container__card__texto">CSS:</p>
+                <div class="codigo">
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">.item_2 {</p>
+                    </div>
+                    <div class="linha_codigo__espacada">
+                        <p class="texto_verde">align-self: </p> <p class="texto_roxo"> flex-end; </p>
+                    </div>
+                    <div class="linha_codigo">
+                        <p class="texto_cinza">}</p>
+                    </div>
+                </div>
+
+                <p class="flex_container__card__texto">Resultado:</p>
+                <div class="resultado">
+                    <div class="resultado_esquerda">
+                        <h5 class="resultado__subtitulo direita">Align-self</h5>
+                        <ul class="align-self_grupo">
+                            <li class="flex__item">1</li>
+                            <li class="flex__item align-self">2</li>
+                            <li class="flex__item">3</li>
+                            <li class="flex__item">4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

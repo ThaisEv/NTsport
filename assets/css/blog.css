@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --azul: #244164;
+    --azul-escuro: #16283f;
+    --cinza-claro: #f3f3f3;
+    --cinza: #e9e9e9;
+    --verde: #adff2f; 
+    --verde-escuro: #8ace25; 
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.postagem {
+    display: flex;
+    gap: 30px;
+    background-color: var(--cinza-claro);
+    border-radius: 8px;
+    padding: 30px;
+    color: var(--azul-escuro);
+    box-shadow: 0 0 8px #63636360;
+}
+
+.postagem:hover {
+    background-color: var(--cinza);
+    cursor: pointer;
+}
+
+.postagem__imagem {
+    width: 500px;
+    border-radius: 8px;
+}
+
+.postagem__informacoes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.postagem__titulo {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.icon_postagem {
+    font-size: 20px;
+}
+
+.ver_mais {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.ver_mais__numero {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
+
+.ver_mais__numero:hover {
+    color: var(--verde);
+    text-decoration-line: underline;
+}
+
+.ver_mais__seta {
+    color: white;
+    background-color: var(--azul-escuro);
+    border-radius: 5px;
+    padding: 2px;
+    padding-top: 5px;
+}
+
+.ver_mais__seta:hover {
+    background-color: var(--verde-escuro);
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
