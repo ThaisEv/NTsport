@@ -290,6 +290,33 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 600px) {
+    .rodape__contatos, .rodape__redes-sociais {
+        text-align: center;
+    }
+
+    .rodape__contatos__infos, .rodape__redes-sociais__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape__contatos__icon, .rodape__redes-sociais__icon {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Estilos para dispositivos entre 600px e 1200px */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .rodape__contatos__infos, .rodape__redes-sociais__info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rodape__redes-sociais__info__redes {
+        gap: 1rem;
+    }
+}
+
 .sobre_empresa__texto__sobre {
     color: var(--azul-escuro);
     text-align: justify;
