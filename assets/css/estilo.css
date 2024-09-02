@@ -292,6 +292,9 @@
 
 /* Para dispositivos menores que 768px (tablets e smartphones pequenos) */
 @media (max-width: 768px) {
+    .anuncio__imagem{
+        display: none;
+    }
     .planos__card__botao__carrinho {
         height: auto; /* Ajusta a altura para acomodar o texto em dispositivos menores */
         padding: 5px 8px; /* Ajusta o padding */
